@@ -17,25 +17,176 @@
   <meta property="og:url" content="https://www.themailboxrepairco.com/" />
   <meta property="og:locale" content="en_US" />
 
-  <!-- Schema.org Local Business -->
+  <!-- ✅ SCHEMA 1: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "The Mail Box Repair Co",
-    "description": "DFW's #1 specialists in mailbox repair and replacement after vehicle impact — knocked down, run over, or backed into. Serving Dallas, Fort Worth, Arlington, and surrounding areas.",
-    "telephone": "+18175926678",
+    "name": "The Mail Box Repair Co.",
+    "url": "https://themailboxrepairco.com",
+    "telephone": "817-592-6678",
     "email": "Office@themailboxrepairco.com",
-    "url": "https://www.themailboxrepairco.com",
+    "description": "The Mail Box Repair Co. specializes in mailbox repair and installation across the DFW Metroplex, with a focus on vehicle-damaged mailboxes and insurance claim assistance. Same-day service available.",
+    "priceRange": "$$",
+    "image": "https://themailboxrepairco.com/images/img1.jpg",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Dallas-Fort Worth",
+      "addressLocality": "Fort Worth",
       "addressRegion": "TX",
       "addressCountry": "US"
     },
-    "areaServed": ["Dallas", "Fort Worth", "Arlington", "Euless", "Bedford", "Hurst", "Irving", "Grapevine", "Southlake", "Colleyville", "Flower Mound", "Keller", "North Richland Hills", "Mansfield", "Grand Prairie"],
-    "priceRange": "$$",
-    "openingHours": "Mo-Sa 07:00-19:00"
+    "areaServed": [
+      "Dallas","Fort Worth","Arlington","Plano","Irving","Garland","Frisco","McKinney",
+      "Grand Prairie","Mesquite","Carrollton","Denton","Lewisville","Allen","Flower Mound",
+      "Euless","Bedford","Hurst","Southlake","Colleyville","Keller","Grapevine",
+      "North Richland Hills","Mansfield","Burleson","Coppell","Weatherford",
+      "DFW Metroplex","Tarrant County","Dallas County","Collin County","Denton County"
+    ],
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "19:00"
+    }],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Mailbox Repair & Installation Services",
+      "itemListElement": [
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vehicle Impact Mailbox Replacement"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Run Over Mailbox Repair"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Mailbox Post Replacement"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Full Mailbox Installation"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Insurance Claim Documentation"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"HOA Community Mailbox Service"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Decorative Mailbox Upgrade"}},
+        {"@type":"Offer","itemOffered":{"@type":"Service","name":"Locking Mailbox Installation"}}
+      ]
+    }
+  }
+  </script>
+
+  <!-- ✅ SCHEMA 2: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Mailbox Repair and Installation",
+    "name": "Vehicle Impact Mailbox Repair — DFW Metroplex",
+    "description": "Same-day mailbox repair and replacement for vehicle-damaged mailboxes across the Dallas-Fort Worth Metroplex. Services include post replacement, full box installation, insurance documentation, and HOA mailbox service.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "The Mail Box Repair Co.",
+      "telephone": "817-592-6678",
+      "url": "https://themailboxrepairco.com"
+    },
+    "areaServed": {"@type": "Place", "name": "DFW Metroplex, Texas"},
+    "offers": {
+      "@type": "Offer",
+      "availability": "https://schema.org/InStock",
+      "priceRange": "$125-$300",
+      "areaServed": "DFW Metroplex, TX"
+    }
+  }
+  </script>
+
+  <!-- ✅ SCHEMA 3: FAQPage — What Google AI Overview pulls from directly -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Someone hit my mailbox — what should I do first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "First, take photos of the damage before anything is moved — this is important for any insurance claim. Then call us at (817) 592-6678. We'll get out to you same day in most cases, replace the post and box, and provide you with a written damage report and invoice for your insurance company at no extra charge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I file an insurance claim for a knocked-down mailbox?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, in many cases you can — especially if someone else's vehicle caused the damage. We provide a detailed written damage assessment and itemized repair invoice that insurance companies accept. If you have the driver's information, their liability insurance may cover the full cost of replacement. We make the documentation process easy for you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you replace a mailbox that was run over?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Same-day service is available for most vehicle impact jobs across DFW. We arrive fully stocked with posts, boxes, hardware, and concrete mix — completing the full replacement in a single visit, usually within 1 to 2 hours. Call us at (817) 592-6678 as early in the day as possible to lock in same-day service."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost to replace a knocked-down mailbox in DFW?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A full post and box replacement after vehicle impact typically runs $125 to $300 depending on the mailbox style you choose. We provide free, no-obligation estimates before any work begins. If you're filing an insurance claim, the cost may be fully covered by the at-fault driver's insurance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer same-day mailbox repair service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Same-day service is often available depending on our schedule and your location within DFW. Call us at (817) 592-6678 in the morning for the best chance of same-day service. We serve the entire DFW metroplex and prioritize urgent impact damage requests."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The Mail Box Repair Co is fully licensed and insured. We carry liability insurance on all jobs, so you have complete peace of mind when we work on your property."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does homeowner's insurance cover mailbox damage from a vehicle in Texas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In most cases, yes. If your mailbox was damaged by a vehicle, it is typically covered under your homeowner's insurance policy as an other structures claim, subject to your deductible. If the driver is identified, their auto liability insurance may cover the full repair cost. We provide detailed written estimates and damage documentation to support your claim."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Someone hit my mailbox and drove off — am I still covered?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Your homeowner's insurance typically covers hit-and-run mailbox damage. File a police report as soon as possible to document the incident. Your policy's other structures coverage generally applies whether or not the driver is identified. We provide the written estimate and documentation your insurance company needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What cities in DFW do you service for mailbox repair?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We serve the entire DFW Metroplex including Fort Worth, Dallas, Arlington, Euless, Bedford, Hurst, Southlake, Colleyville, Keller, Grapevine, Irving, Flower Mound, North Richland Hills, Mansfield, Grand Prairie, Coppell, Lewisville, Frisco, Plano, Burleson, and all surrounding Tarrant, Dallas, Collin, and Denton County communities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a free mailbox repair estimate in Fort Worth or Dallas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Call us at 817-592-6678 or visit our online estimator at mailboxrepairco.github.io/mbrc-estimator. We serve all of DFW and can often schedule same-day or next-day assessments. Our estimates are written, detailed, insurance-ready, and completely free."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ✅ SCHEMA 4: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "The Mail Box Repair Co.",
+    "url": "https://themailboxrepairco.com",
+    "description": "DFW's specialists in vehicle impact mailbox repair and replacement. Same-day service, insurance documentation, and free estimates across Dallas-Fort Worth."
   }
   </script>
 
@@ -1222,7 +1373,7 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#" onclick="showPage('home')">
-    <img src="img1.jpg" alt="The Mailbox Repair Co Logo" style="height:54px;width:54px;object-fit:cover;border-radius:8px;background:#2a2a2a;" />
+    <img src="images/img1.jpg" alt="The Mailbox Repair Co Logo" style="height:54px;width:54px;object-fit:cover;border-radius:8px;background:#2a2a2a;" />
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#" onclick="showPage('home'); closeMenu()">Home</a></li>
@@ -1273,7 +1424,7 @@
       <div class="hero-visual fade-up delay-2">
         <div class="mailbox-illustration">
           <div class="mailbox-card">
-            <img src="img2.jpg" alt="The Mailbox Repair Co" style="width:160px;height:160px;object-fit:cover;border-radius:16px;display:block;margin:0 auto 20px;" />
+            <img src="images/img2.jpg" alt="The Mailbox Repair Co" style="width:160px;height:160px;object-fit:cover;border-radius:16px;display:block;margin:0 auto 20px;" />
             <div class="service-chips">
               <span class="chip">🚗 Hit by a Car</span>
               <span class="chip">💥 Knocked Down</span>
@@ -1318,32 +1469,32 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item wide">
-          <img src="img3.jpg" alt="New mailbox post installed at curb DFW" loading="lazy" />
+          <img src="images/img3.jpg" alt="New mailbox post installed at curb DFW" loading="lazy" />
           <div class="work-badge">✅ Completed</div>
           <div class="gallery-overlay"><div class="gallery-caption">Full Post & Box Replacement<span>Fort Worth, TX — Vehicle Impact</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img4.jpg" alt="Residential mailbox installation DFW Texas" loading="lazy" />
+          <img src="images/img4.jpg" alt="Residential mailbox installation DFW Texas" loading="lazy" />
           <div class="work-badge">✅ Completed</div>
           <div class="gallery-overlay"><div class="gallery-caption">New Residential Installation<span>Southlake, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img5.jpg" alt="Mailbox replaced after car knocked it down" loading="lazy" />
+          <img src="images/img5.jpg" alt="Mailbox replaced after car knocked it down" loading="lazy" />
           <div class="work-badge">✅ Completed</div>
           <div class="gallery-overlay"><div class="gallery-caption">Post Replacement After Impact<span>Arlington, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img6.jpg" alt="Decorative mailbox installation Keller TX" loading="lazy" />
+          <img src="images/img6.jpg" alt="Decorative mailbox installation Keller TX" loading="lazy" />
           <div class="work-badge">✅ Completed</div>
           <div class="gallery-overlay"><div class="gallery-caption">Decorative Mailbox Upgrade<span>Keller, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img7.jpg" alt="Curbside mailbox replaced DFW same day service" loading="lazy" />
+          <img src="images/img7.jpg" alt="Curbside mailbox replaced DFW same day service" loading="lazy" />
           <div class="work-badge">⚡ Same Day</div>
           <div class="gallery-overlay"><div class="gallery-caption">Same-Day Emergency Replacement<span>Euless, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img8.jpg" alt="HOA community mailbox repair DFW" loading="lazy" />
+          <img src="images/img8.jpg" alt="HOA community mailbox repair DFW" loading="lazy" />
           <div class="work-badge">🏘️ HOA</div>
           <div class="gallery-overlay"><div class="gallery-caption">HOA Community Mailbox Service<span>Flower Mound, TX</span></div></div>
         </div>
@@ -1365,7 +1516,7 @@
       <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img9.jpg" alt="Vehicle impact mailbox replacement DFW" loading="lazy" />
+            <img src="images/img9.jpg" alt="Vehicle impact mailbox replacement DFW" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🚗</div>
               <h3>Vehicle Impact Replacement</h3>
@@ -1377,7 +1528,7 @@
         </div>
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img10.jpg" alt="Run over mailbox repair DFW" loading="lazy" />
+            <img src="images/img10.jpg" alt="Run over mailbox repair DFW" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">💥</div>
               <h3>Run Over Mailbox Repair</h3>
@@ -1389,7 +1540,7 @@
         </div>
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img11.jpg" alt="Mailbox post replacement concrete set" loading="lazy" />
+            <img src="images/img11.jpg" alt="Mailbox post replacement concrete set" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🪵</div>
               <h3>Post Replacement</h3>
@@ -1401,7 +1552,7 @@
         </div>
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img12.jpg" alt="Full mailbox installation residential DFW" loading="lazy" />
+            <img src="images/img12.jpg" alt="Full mailbox installation residential DFW" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">📦</div>
               <h3>Full Mailbox Installation</h3>
@@ -1413,7 +1564,7 @@
         </div>
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img13.jpg" alt="Insurance documentation for mailbox damage claim" loading="lazy" />
+            <img src="images/img13.jpg" alt="Insurance documentation for mailbox damage claim" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">📋</div>
               <h3>Insurance Documentation</h3>
@@ -1425,7 +1576,7 @@
         </div>
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img14.jpg" alt="HOA community cluster mailboxes DFW" loading="lazy" />
+            <img src="images/img14.jpg" alt="HOA community cluster mailboxes DFW" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🏘️</div>
               <h3>HOA &amp; Community Mailboxes</h3>
@@ -1537,7 +1688,7 @@
         <!-- 1 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img15.jpg" alt="Car hitting a mailbox — vehicle impact damage DFW" loading="lazy" />
+            <img src="images/img15.jpg" alt="Car hitting a mailbox — vehicle impact damage DFW" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🚗</div>
               <h3>Mailbox Hit by a Car</h3>
@@ -1551,7 +1702,7 @@
         <!-- 2 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img16.jpg" alt="Mailbox run over and flattened on curb" loading="lazy" />
+            <img src="images/img16.jpg" alt="Mailbox run over and flattened on curb" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">💥</div>
               <h3>Run Over Mailbox Replacement</h3>
@@ -1565,7 +1716,7 @@
         <!-- 3 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img17.jpg" alt="Insurance claim paperwork and documentation" loading="lazy" />
+            <img src="images/img17.jpg" alt="Insurance claim paperwork and documentation" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">📋</div>
               <h3>Insurance Claim Documentation</h3>
@@ -1579,7 +1730,7 @@
         <!-- 4 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img18.jpg" alt="Mailbox post being set in concrete curbside" loading="lazy" />
+            <img src="images/img18.jpg" alt="Mailbox post being set in concrete curbside" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🪵</div>
               <h3>Mailbox Post Replacement</h3>
@@ -1593,7 +1744,7 @@
         <!-- 5 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img19.jpg" alt="Brand new mailbox installation at residential curb DFW" loading="lazy" />
+            <img src="images/img19.jpg" alt="Brand new mailbox installation at residential curb DFW" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">📦</div>
               <h3>Full Mailbox Installation</h3>
@@ -1607,7 +1758,7 @@
         <!-- 6 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img20.jpg" alt="Decorative estate-style mailbox at luxury home" loading="lazy" />
+            <img src="images/img20.jpg" alt="Decorative estate-style mailbox at luxury home" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">✨</div>
               <h3>Decorative &amp; Architectural Mailboxes</h3>
@@ -1621,7 +1772,7 @@
         <!-- 7 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img21.jpg" alt="HOA community cluster mailboxes in neighborhood" loading="lazy" />
+            <img src="images/img21.jpg" alt="HOA community cluster mailboxes in neighborhood" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🏘️</div>
               <h3>HOA &amp; Community Mailbox Service</h3>
@@ -1635,7 +1786,7 @@
         <!-- 8 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img22.jpg" alt="Mailbox repair tools and hardware" loading="lazy" />
+            <img src="images/img22.jpg" alt="Mailbox repair tools and hardware" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🔧</div>
               <h3>General Mailbox Repair</h3>
@@ -1649,7 +1800,7 @@
         <!-- 9 -->
         <div class="service-card">
           <div class="service-card-photo">
-            <img src="img23.jpg" alt="Locking mailbox upgrade for mail theft protection" loading="lazy" />
+            <img src="images/img23.jpg" alt="Locking mailbox upgrade for mail theft protection" loading="lazy" />
             <div class="service-card-title-wrap">
               <div class="service-card-icon">🔒</div>
               <h3>Locking Mailbox Upgrade</h3>
@@ -1680,27 +1831,27 @@
           <div class="gallery-overlay"><div class="gallery-caption">Post Replaced After Car Impact<span>North Richland Hills, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img24.jpg" alt="New mailbox installed at residential curb DFW Texas" loading="lazy" />
+          <img src="images/img24.jpg" alt="New mailbox installed at residential curb DFW Texas" loading="lazy" />
           <div class="work-badge">✅ Completed</div>
           <div class="gallery-overlay"><div class="gallery-caption">New Full Installation<span>Mansfield, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img25.jpg" alt="Residential home mailbox DFW neighborhood" loading="lazy" />
+          <img src="images/img25.jpg" alt="Residential home mailbox DFW neighborhood" loading="lazy" />
           <div class="work-badge">✅ Completed</div>
           <div class="gallery-overlay"><div class="gallery-caption">Residential Replacement<span>Colleyville, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img26.jpg" alt="Curbside mailbox post installation concrete set" loading="lazy" />
+          <img src="images/img26.jpg" alt="Curbside mailbox post installation concrete set" loading="lazy" />
           <div class="work-badge">⚡ Same Day</div>
           <div class="gallery-overlay"><div class="gallery-caption">Same-Day Replacement<span>Grapevine, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img27.jpg" alt="Upgraded decorative mailbox DFW Texas home" loading="lazy" />
+          <img src="images/img27.jpg" alt="Upgraded decorative mailbox DFW Texas home" loading="lazy" />
           <div class="work-badge">✨ Upgrade</div>
           <div class="gallery-overlay"><div class="gallery-caption">Decorative Upgrade<span>Southlake, TX</span></div></div>
         </div>
         <div class="gallery-item">
-          <img src="img28.jpg" alt="HOA neighborhood mailbox repair community DFW" loading="lazy" />
+          <img src="images/img28.jpg" alt="HOA neighborhood mailbox repair community DFW" loading="lazy" />
           <div class="work-badge">🏘️ HOA</div>
           <div class="gallery-overlay"><div class="gallery-caption">HOA Neighborhood Service<span>Irving, TX</span></div></div>
         </div>
@@ -2005,7 +2156,7 @@
 
       <div class="about-content">
         <div class="about-visual">
-          <img src="img29.jpg" alt="The Mailbox Repair Co Logo" style="width:200px;height:200px;object-fit:cover;border-radius:20px;display:block;margin:0 auto 24px;" />
+          <img src="images/img29.jpg" alt="The Mailbox Repair Co Logo" style="width:200px;height:200px;object-fit:cover;border-radius:20px;display:block;margin:0 auto 24px;" />
           <div class="about-tagline">DFW's Trusted<br><span>Mailbox Experts</span></div>
           <p class="about-sub">Serving Dallas-Fort Worth with pride</p>
         </div>
